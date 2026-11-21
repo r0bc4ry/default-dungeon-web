@@ -5,80 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Default Dungeon</title>
   <meta name="description" content="Default Dungeon is an independent game studio in Virginia.">
+  <meta name="theme-color" content="#000000">
   <meta property="og:title" content="Default Dungeon">
   <meta property="og:description" content="An independent game studio in Virginia.">
   <meta property="og:url" content="https://defaultdungeon.com/">
   <meta property="og:type" content="website">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232B2B2B'/%3E%3Ctext x='16' y='22' font-family='system-ui,sans-serif' font-size='16' font-weight='800' fill='%23FFD700' text-anchor='middle'%3EDD%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23000'/%3E%3Ctext x='16' y='22.5' font-family='system-ui,sans-serif' font-size='15' font-weight='900' fill='%23fff' text-anchor='middle'%3EDD%3C/text%3E%3C/svg%3E">
   <style>
-    :root {
-      --bg: #2B2B2B;
-      --text: #F4F1E8;
-      --muted: #B8B4A8;
-      --accent: #FFD700;
-      --line: #444444;
-    }
     * { box-sizing: border-box; }
     html, body { margin: 0; height: 100%; }
     body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      line-height: 1.55;
+      background: #000;
+      color: #fff;
+      font-family: "Helvetica Neue", Helvetica, Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
-      min-height: 100vh;
+      justify-content: space-between;
+      padding: clamp(1.5rem, 5vw, 4rem);
     }
-    main {
-      flex: 1;
-      width: 100%;
-      max-width: 44rem;
-      margin: 0 auto;
-      padding: 18vh 1.5rem 4rem;
-    }
-    .wordmark {
-      margin: 0;
-      font-size: clamp(2.5rem, 8vw, 4rem);
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      line-height: 1.05;
-    }
-    .wordmark span { color: var(--accent); }
-    .tagline {
-      margin: 1rem 0 0;
-      font-size: 1.15rem;
-      color: var(--muted);
-      max-width: 34rem;
-    }
-    .contact { margin-top: 3rem; }
-    .contact h3 {
-      margin: 0 0 0.35rem;
-      font-size: 0.8rem;
-      letter-spacing: 0.08em;
+    h1 {
+      margin: auto 0 0;
+      font-size: clamp(2.5rem, 13vw, 13rem);
+      font-weight: 900;
+      line-height: 0.85;
+      letter-spacing: -0.05em;
       text-transform: uppercase;
-      color: var(--muted);
     }
-    a { color: var(--text); text-decoration-color: var(--accent); text-underline-offset: 3px; }
-    a:hover, a:focus-visible { color: var(--accent); }
-    footer {
-      padding: 1.5rem;
-      text-align: center;
-      font-size: 0.85rem;
-      color: var(--muted);
-      border-top: 1px solid var(--line);
+    .bottom {
+      margin-top: clamp(2rem, 6vw, 4rem);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem 2rem;
+      padding-top: 1.25rem;
+      border-top: 2px solid #fff;
+      font-size: clamp(0.9rem, 1.6vw, 1.1rem);
+      font-weight: 700;
+      letter-spacing: 0.02em;
     }
+    .bottom p { margin: 0; }
+    .muted { color: #8a8a8a; font-weight: 500; }
   </style>
 </head>
 <body>
-  <main>
-    <h1 class="wordmark">Default <span>Dungeon</span></h1>
-    <p class="tagline">An independent game studio in Virginia.</p>
-
-    <section class="contact">
-      <h3>Contact</h3>
-      <a href="mailto:rob@defaultdungeon.com">rob@defaultdungeon.com</a>
-    </section>
-  </main>
-  <footer>&copy; 2026 Default Dungeon LLC</footer>
+  <h1>Default<br>Dungeon</h1>
+  <div class="bottom">
+    <p>Independent game studio. Virginia.</p>
+    <p class="muted">&copy; 2026 Default Dungeon LLC</p>
+  </div>
 </body>
 </html>
